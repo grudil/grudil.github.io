@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Ilya Chekhov</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Inter+Tight:wght@800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .nf {
+      min-height: 100dvh;
+      display: grid;
+      align-content: center;
+      gap: var(--space-sm);
+    }
+
+    .nf-code {
+      font-family: var(--font-display);
+      font-size: var(--text-h1);
+      font-weight: 800;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      color: var(--color-accent);
+    }
+
+    .nf-label {
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-muted);
+    }
+
+    .nf-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2xs) var(--space-sm);
+      margin-top: var(--space-xs);
+    }
+
+    .nf-links a {
+      color: var(--color-text);
+      text-decoration: underline;
+      text-decoration-color: var(--color-accent);
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 0.25em;
+    }
+
+    .nf-links a:hover,
+    .nf-links a:focus-visible {
+      color: var(--color-accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="nf">
+      <p class="nf-label">Page not found · Страница не найдена</p>
+      <p class="nf-code">404</p>
+      <p>This page doesn’t exist. The resume lives here:</p>
+      <div class="nf-links">
+        <a href="/">Resume (EN)</a>
+        <a href="/ru.html" hreflang="ru" lang="ru">Резюме (RU)</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
