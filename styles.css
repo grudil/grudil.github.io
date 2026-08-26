@@ -11,7 +11,6 @@
   --color-text-mid: oklch(72% 0.022 255);
   --color-muted: oklch(58% 0.025 255);
   --color-accent: oklch(87% 0.09 180);
-  --color-accent-tint: oklch(76% 0.11 180 / 0.1);
   --color-rule: oklch(34% 0.03 255);
 
   --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -447,29 +446,6 @@ a {
   background: var(--color-accent);
 }
 
-.job .tags {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2xs);
-  margin-top: var(--space-xs);
-  max-width: 60ch;
-}
-
-.job .tags li {
-  padding: 0.2rem 0.7rem;
-  margin: 0;
-  border-radius: 999px;
-  background: var(--color-accent-tint);
-  color: var(--color-accent);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-}
-
-.job .tags li::before {
-  display: none;
-}
-
 /* Education / languages */
 .edu p,
 .langs p {
@@ -596,12 +572,6 @@ a {
   .job h3 .company,
   .edu .edu-year {
     color: #000;
-  }
-
-  .job .tags li {
-    background: none;
-    border: 1px solid #999;
-    color: #333;
   }
 
   .content section,
