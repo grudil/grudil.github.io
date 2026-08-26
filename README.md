@@ -1,6 +1,6 @@
-# ichekhov.github.io
+# grudil.github.io
 
-Персональная страница-резюме: **[ichekhov.github.io](https://ichekhov.github.io/)** ([EN](https://ichekhov.github.io/) / [RU](https://ichekhov.github.io/ru.html))
+Персональная страница-резюме: **[grudil.github.io](https://grudil.github.io/)** ([EN](https://grudil.github.io/) / [RU](https://grudil.github.io/ru.html))
 
 Senior Python Backend Engineer / Tech Lead — Python, Django, FastAPI, asyncio, PostgreSQL, RabbitMQ. 5+ лет опыта проектирования и масштабирования высоконагруженных backend-систем и микросервисной архитектуры.
 
