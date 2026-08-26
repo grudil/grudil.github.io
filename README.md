@@ -2,7 +2,7 @@
 
 Персональная страница-резюме: **[grudil.github.io](https://grudil.github.io/)** ([EN](https://grudil.github.io/) / [RU](https://grudil.github.io/ru.html))
 
-Senior Python Backend Engineer / Tech Lead — Python, Django, FastAPI, asyncio, PostgreSQL, RabbitMQ. 5+ лет опыта проектирования и масштабирования высоконагруженных backend-систем и микросервисной архитектуры.
+Lead Python Backend Engineer / Tech Lead — Python, FastAPI, Django, PostgreSQL, RabbitMQ, Kubernetes. 6+ лет опыта проектирования и масштабирования backend-систем, микросервисной архитектуры и событийно-ориентированных платформ.
 
 ## Устройство
 

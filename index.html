@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ilya Chekhov — Senior Python Backend Engineer / Tech Lead</title>
-  <meta name="description" content="Senior Python Backend Engineer / Tech Lead with 5+ years of experience scaling high-load backend systems: Python, Django, FastAPI, PostgreSQL, RabbitMQ. Open to fully remote roles worldwide.">
+  <title>Ilya Chekhov — Lead Python Backend Engineer / Tech Lead</title>
+  <meta name="description" content="Lead Python Backend Engineer / Tech Lead with 6+ years of experience scaling backend systems and event-driven platforms: Python, FastAPI, Django, PostgreSQL, RabbitMQ, Kubernetes. Open to fully remote roles worldwide.">
   <link rel="canonical" href="https://grudil.github.io/">
   <link rel="alternate" hreflang="en" href="https://grudil.github.io/">
   <link rel="alternate" hreflang="ru" href="https://grudil.github.io/ru.html">
   <link rel="alternate" hreflang="x-default" href="https://grudil.github.io/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Ilya Chekhov — Senior Python Backend Engineer / Tech Lead">
-  <meta property="og:description" content="5+ years designing and scaling high-load backend systems and microservices. Open to fully remote roles worldwide.">
+  <meta property="og:title" content="Ilya Chekhov — Lead Python Backend Engineer / Tech Lead">
+  <meta property="og:description" content="6+ years designing and scaling backend systems, microservices, and event-driven platforms. Open to fully remote roles worldwide.">
   <meta property="og:url" content="https://grudil.github.io/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
 
     <header class="hero">
       <h1>Ilya Chekhov</h1>
-      <p class="hero-role">Senior Python Backend Engineer / Tech Lead</p>
+      <p class="hero-role">Lead Python Backend Engineer / Tech Lead</p>
       <p class="hero-meta">Tbilisi, Georgia · Open to fully remote roles worldwide</p>
       <ul class="hero-links">
         <li><a href="mailto:chehovilya@icloud.com">chehovilya@icloud.com</a></li>
@@ -50,7 +50,7 @@
 
       <section class="section" aria-labelledby="summary-h">
         <h2 id="summary-h">Summary</h2>
-        <p class="lead">Senior Python Backend Engineer / Tech Lead with 5+ years of commercial experience designing and scaling high-load backend systems and microservice architectures using Python, Django, FastAPI, asyncio, PostgreSQL, and RabbitMQ. Experienced in technical leadership: architecture design, technical specifications, production ownership, code review, and mentoring.</p>
+        <p class="lead">Lead Python Backend Engineer with 6+ years of commercial experience designing and scaling backend systems, microservice architectures, and event-driven platforms using Python, FastAPI, Django, PostgreSQL, RabbitMQ, and Kubernetes. Experienced in architecture ownership, technical specifications, production engineering, code review, mentoring, and establishing team-wide engineering standards.</p>
       </section>
 
       <section class="section" aria-labelledby="skills-h">
@@ -58,7 +58,7 @@
         <dl class="skills">
           <div>
             <dt>Languages &amp; Frameworks</dt>
-            <dd>Python, Django, Django REST Framework, FastAPI, asyncio, Celery, SQLAlchemy, Alembic</dd>
+            <dd>Python, FastAPI, Django, Django REST Framework, asyncio, SQLAlchemy, Alembic, Celery</dd>
           </div>
           <div>
             <dt>Data &amp; Messaging</dt>
@@ -70,7 +70,7 @@
           </div>
           <div>
             <dt>Observability &amp; Auth</dt>
-            <dd>Grafana, Keycloak</dd>
+            <dd>Grafana, Prometheus, Keycloak, Vault</dd>
           </div>
           <div>
             <dt>Architecture &amp; Practices</dt>
@@ -86,6 +86,23 @@
       <section class="section" aria-labelledby="experience-h">
         <h2 id="experience-h">Experience</h2>
         <div class="jobs">
+          <article class="job">
+            <div class="job-head">
+              <h3>Lead Python Developer <span class="company">— X5 Group</span></h3>
+            </div>
+            <p class="job-meta">Remote · Jun 2025 – Present</p>
+            <p class="job-note">Food-media and e-commerce platform of Russia’s largest food retailer; microservices backend of approximately 20 Python/FastAPI services.</p>
+            <ul>
+              <li>Designed and built a video-processing service end to end, implementing chunked uploads to S3-compatible storage, asynchronous FFmpeg transcoding into four renditions (1080p–360p), processing-state management, and HLS adaptive streaming.</li>
+              <li>Designed and implemented a content recommendation feed integrating X5’s centralized recommendation service through Keycloak-authenticated service-to-service communication with token caching; added an in-memory TTL-cached cold-start strategy, eliminating per-request database queries for new users.</li>
+              <li>Introduced RabbitMQ as the platform-wide event-driven messaging layer from scratch, establishing team-wide producer/consumer standards with FastStream, routing-key conventions, dead-letter handling, CI testing, and declarative exchange/queue topology managed through Helm.</li>
+              <li>Designed and deployed a production RabbitMQ cluster on Kubernetes using the RabbitMQ Cluster Operator, 3 replicas, quorum queues, Vault-managed credentials, and Prometheus monitoring.</li>
+              <li>Built an idempotent master-data synchronization pipeline for product-category hierarchies across three retail chains, using batched PostgreSQL upserts, two-pass parent-hierarchy resolution, and transactional rollback on failure.</li>
+              <li>Accelerated test execution and CI using pytest-xdist with loadscope distribution and incremental test selection via pytest-testmon, with enforced coverage gates in GitLab CI.</li>
+              <li>Managed Helm-based Kubernetes configuration for approximately 20 microservices and 26 CronJobs supporting product imports, data synchronization, and database maintenance across production and 18 staging environments.</li>
+            </ul>
+          </article>
+
           <article class="job">
             <div class="job-head">
               <h3>Lead Python Developer / Team Lead <span class="company">— Skillbox</span></h3>

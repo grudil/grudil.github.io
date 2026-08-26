@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Илья Чехов — Senior Python Backend-разработчик / Техлид</title>
-  <meta name="description" content="Senior Python Backend-разработчик / техлид с 5+ годами опыта проектирования и масштабирования высоконагруженных backend-систем: Python, Django, FastAPI, PostgreSQL, RabbitMQ. Рассматриваю полностью удалённую работу.">
+  <title>Илья Чехов — Lead Python Backend-разработчик / Техлид</title>
+  <meta name="description" content="Lead Python Backend-разработчик / техлид с 6+ годами опыта проектирования и масштабирования backend-систем и событийно-ориентированных платформ: Python, FastAPI, Django, PostgreSQL, RabbitMQ, Kubernetes. Рассматриваю полностью удалённую работу.">
   <link rel="canonical" href="https://grudil.github.io/ru.html">
   <link rel="alternate" hreflang="en" href="https://grudil.github.io/">
   <link rel="alternate" hreflang="ru" href="https://grudil.github.io/ru.html">
   <link rel="alternate" hreflang="x-default" href="https://grudil.github.io/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Илья Чехов — Senior Python Backend-разработчик / Техлид">
-  <meta property="og:description" content="5+ лет проектирования и масштабирования высоконагруженных backend-систем и микросервисов. Рассматриваю полностью удалённую работу.">
+  <meta property="og:title" content="Илья Чехов — Lead Python Backend-разработчик / Техлид">
+  <meta property="og:description" content="6+ лет проектирования и масштабирования backend-систем, микросервисов и событийно-ориентированных платформ. Рассматриваю полностью удалённую работу.">
   <meta property="og:url" content="https://grudil.github.io/ru.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
 
     <header class="hero">
       <h1>Илья Чехов</h1>
-      <p class="hero-role">Senior Python Backend-разработчик / Техлид</p>
+      <p class="hero-role">Lead Python Backend-разработчик / Техлид</p>
       <p class="hero-meta">Тбилиси, Грузия · Открыт к полностью удалённой работе (worldwide)</p>
       <ul class="hero-links">
         <li><a href="mailto:chehovilya@icloud.com">chehovilya@icloud.com</a></li>
@@ -50,7 +50,7 @@
 
       <section class="section" aria-labelledby="summary-h">
         <h2 id="summary-h">О себе</h2>
-        <p class="lead">Senior Python Backend-разработчик / техлид с более чем 5 годами коммерческого опыта проектирования и масштабирования высоконагруженных backend-систем и микросервисной архитектуры: Python, Django, FastAPI, asyncio, PostgreSQL, RabbitMQ. Опыт технического лидерства: проектирование архитектуры, технические спецификации, ответственность за production, код-ревью и менторинг.</p>
+        <p class="lead">Lead Python Backend-разработчик с более чем 6 годами коммерческого опыта проектирования и масштабирования backend-систем, микросервисной архитектуры и событийно-ориентированных платформ: Python, FastAPI, Django, PostgreSQL, RabbitMQ, Kubernetes. Опыт владения архитектурой, технических спецификаций, production-инжиниринга, код-ревью, менторинга и внедрения командных инженерных стандартов.</p>
       </section>
 
       <section class="section" aria-labelledby="skills-h">
@@ -58,7 +58,7 @@
         <dl class="skills">
           <div>
             <dt>Языки и фреймворки</dt>
-            <dd>Python, Django, Django REST Framework, FastAPI, asyncio, Celery, SQLAlchemy, Alembic</dd>
+            <dd>Python, FastAPI, Django, Django REST Framework, asyncio, SQLAlchemy, Alembic, Celery</dd>
           </div>
           <div>
             <dt>Данные и очереди</dt>
@@ -70,7 +70,7 @@
           </div>
           <div>
             <dt>Наблюдаемость и Auth</dt>
-            <dd>Grafana, Keycloak</dd>
+            <dd>Grafana, Prometheus, Keycloak, Vault</dd>
           </div>
           <div>
             <dt>Архитектура и практики</dt>
@@ -86,6 +86,23 @@
       <section class="section" aria-labelledby="experience-h">
         <h2 id="experience-h">Опыт</h2>
         <div class="jobs">
+          <article class="job">
+            <div class="job-head">
+              <h3>Lead Python Developer <span class="company">— X5 Group</span></h3>
+            </div>
+            <p class="job-meta">Удалённо · июнь 2025 — настоящее время</p>
+            <p class="job-note">Фуд-медиа и e-commerce платформа крупнейшего продуктового ритейлера России; микросервисный backend из ~20 Python/FastAPI-сервисов.</p>
+            <ul>
+              <li>Спроектировал и построил сервис обработки видео «под ключ»: чанковая загрузка в S3-совместимое хранилище, асинхронный транскодинг FFmpeg в четыре качества (1080p–360p), управление состояниями обработки и адаптивный стриминг HLS.</li>
+              <li>Спроектировал и реализовал ленту рекомендаций контента с интеграцией централизованного рекомендательного сервиса X5 через service-to-service взаимодействие с аутентификацией Keycloak и кешированием токенов; добавил in-memory TTL-кеш для cold-start-стратегии, убрав обращения к БД на каждый запрос новых пользователей.</li>
+              <li>Внедрил RabbitMQ как общеплатформенный слой событийного обмена с нуля: командные стандарты продюсеров и консьюмеров на FastStream, конвенции routing-key, обработка dead-letter, CI-тесты и декларативная топология обменников и очередей через Helm.</li>
+              <li>Спроектировал и развернул production-кластер RabbitMQ в Kubernetes на RabbitMQ Cluster Operator: 3 реплики, quorum-очереди, учётные данные в Vault, мониторинг в Prometheus.</li>
+              <li>Построил идемпотентный пайплайн синхронизации мастер-данных иерархий товарных категорий трёх торговых сетей: батчевые upsert в PostgreSQL, двухпроходное разрешение родительской иерархии, транзакционный откат при сбое.</li>
+              <li>Ускорил прогон тестов и CI: pytest-xdist с loadscope-распределением, инкрементальный отбор тестов через pytest-testmon, обязательные coverage-гейты в GitLab CI.</li>
+              <li>Управлял Helm-конфигурацией Kubernetes для ~20 микросервисов и 26 CronJob (импорт товаров, синхронизация данных, обслуживание БД) в production и 18 staging-окружениях.</li>
+            </ul>
+          </article>
+
           <article class="job">
             <div class="job-head">
               <h3>Lead Python Developer / Тимлид <span class="company">— Skillbox</span></h3>
