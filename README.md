@@ -1,10 +1,10 @@
-# Ilya Chekhov — Lead Python Backend Engineer / Tech Lead
+# Ilya Chekhov — Senior Python Backend Engineer / Tech Lead
 
 Personal resume: **[grudil.github.io](https://grudil.github.io/)** · [English](https://grudil.github.io/) · [Русский](https://grudil.github.io/ru.html) · [PDF](https://grudil.github.io/assets/ilya-chekhov-python-en.pdf)
 
 I design and scale high-load, event-driven Python backends and the teams that run them.
 
-Lead Python Backend Engineer / Tech Lead with 6+ years of commercial experience designing and building high-load backend systems, distributed services, and event-driven microservice architectures. Hands-on expertise in Python, FastAPI, Django, PostgreSQL, RabbitMQ, Redis, Kafka, and Kubernetes. Open to fully remote roles worldwide.
+Senior Python Backend Engineer / Tech Lead with 6+ years of commercial experience designing and scaling high-load backend systems and microservice architectures. Hands-on expertise in Python, Django, FastAPI, PostgreSQL, RabbitMQ, and Kubernetes. Open to fully remote Senior / Lead roles.
 
 ## About the site
 
