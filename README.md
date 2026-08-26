@@ -1,14 +1,16 @@
-# grudil.github.io
+# Ilya Chekhov — Lead Python Backend Engineer / Tech Lead
 
-Персональная страница-резюме: **[grudil.github.io](https://grudil.github.io/)** ([EN](https://grudil.github.io/) / [RU](https://grudil.github.io/ru.html))
+Personal resume: **[grudil.github.io](https://grudil.github.io/)** · [English](https://grudil.github.io/) · [Русский](https://grudil.github.io/ru.html) · [PDF](https://grudil.github.io/assets/ilya-chekhov-python-en.pdf)
 
-Lead Python Backend Engineer / Tech Lead — Python, FastAPI, Django, PostgreSQL, RabbitMQ, Kubernetes. 6+ лет опыта проектирования и масштабирования backend-систем, микросервисной архитектуры и событийно-ориентированных платформ.
+I design and scale high-load, event-driven Python backends and the teams that run them.
 
-## Устройство
+Lead Python Backend Engineer / Tech Lead with 6+ years of commercial experience designing and building high-load backend systems, distributed services, and event-driven microservice architectures. Hands-on expertise in Python, FastAPI, Django, PostgreSQL, RabbitMQ, Redis, Kafka, and Kubernetes. Open to fully remote roles worldwide.
 
-Статический сайт без сборки — GitHub Pages отдаёт файлы из корня `main`:
+## About the site
 
-- `index.html` — английская версия (основная)
-- `ru.html` — русская версия
-- `styles.css` — общие стили (тёмный two-column, teal-акцент)
-- `assets/ilya-chekhov-python-en.pdf` — резюме в PDF
+A bilingual static resume deployed with GitHub Pages from the root of `main`; no build step is required.
+
+- `index.html` — primary English resume
+- `ru.html` — Russian resume
+- `styles.css` — shared dark two-column design
+- `assets/ilya-chekhov-python-en.pdf` — downloadable English resume
