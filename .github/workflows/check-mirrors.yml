@@ -1,0 +1,16 @@
+name: Check EN/RU mirror consistency
+
+on:
+  push:
+    branches: [main]
+    paths: ["index.html", "ru.html", "README.md", "scripts/check_mirrors.py", ".github/workflows/check-mirrors.yml"]
+  pull_request:
+    paths: ["index.html", "ru.html", "README.md", "scripts/check_mirrors.py", ".github/workflows/check-mirrors.yml"]
+
+jobs:
+  check-mirrors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check index.html / ru.html / README.md consistency
+        run: python3 scripts/check_mirrors.py
