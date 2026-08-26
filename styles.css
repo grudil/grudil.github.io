@@ -265,10 +265,6 @@ a {
   margin-bottom: var(--space-section);
 }
 
-main {
-  counter-reset: sec;
-}
-
 .section > h2 {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -276,15 +272,6 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-text);
-}
-
-.section > h2::before {
-  counter-increment: sec;
-  content: counter(sec, decimal-leading-zero);
-  display: block;
-  margin-bottom: var(--space-2xs);
-  font-weight: 500;
-  color: var(--color-accent);
 }
 
 @media (min-width: 768px) {
@@ -458,6 +445,34 @@ main {
 ::selection {
   background: var(--color-accent);
   color: oklch(99% 0 0);
+}
+
+/* Restrained load-in: hero reads top-down in sequence; static under reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1,
+  .hero-role,
+  .hero-meta,
+  .hero-links,
+  .stats {
+    animation: rise 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .hero-role { animation-delay: 80ms; }
+  .hero-meta { animation-delay: 140ms; }
+  .hero-links { animation-delay: 200ms; }
+  .stats { animation-delay: 280ms; }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* --------------------------------------------------------------------------
