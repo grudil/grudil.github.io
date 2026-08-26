@@ -10,5 +10,5 @@ Lead Python Backend Engineer / Tech Lead — Python, FastAPI, Django, PostgreSQL
 
 - `index.html` — английская версия (основная)
 - `ru.html` — русская версия
-- `styles.css` — общие стили (Swiss / минимализм)
+- `styles.css` — общие стили (тёмный two-column, teal-акцент)
 - `assets/ilya-chekhov-python-en.pdf` — резюме в PDF
